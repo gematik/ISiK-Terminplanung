@@ -273,8 +273,8 @@
         "id": "Appointment.participant:AkteurPatient",
         "path": "Appointment.participant",
         "sliceName": "AkteurPatient",
-        "comment": "Hinweis: Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein. Ein Sonderfall sind Patienten über die ein Termin-Requestor oder Termin-Repository nur rudimentäre Informationen verfügt. Diese Patienten-Ressourcen sind bis zur Vervollständigung nur gegen den Kernstandard valide.\n\nBegründung zu Kardinalität und Must Support: Die teilnehmenden Patienten eines Termins sind von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..*) und muss unterstützt werden (MS).",
-        "min": 1,
+        "comment": "Hinweis: Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein. Ein Sonderfall sind Patienten über die ein Termin-Requestor oder Termin-Repository nur rudimentäre Informationen verfügt. Diese Patienten-Ressourcen sind bis zur Vervollständigung nur gegen den Kernstandard valide.\n\nBegründung zu Kardinalität und Must Support: Die teilnehmenden Patienten eines Termins sind von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher muss dieses Feld unterstützt werden (MS). Hingegen kann die Patienten-Referenz separat in der $book-Operation übergeben werden, sodass hier keine verpflichtende Kardinaltiät gewählt werden kann.",
+        "min": 0,
         "max": "*",
         "mustSupport": true
       },

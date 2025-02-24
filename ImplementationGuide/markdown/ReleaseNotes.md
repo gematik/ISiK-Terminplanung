@@ -6,7 +6,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version 4.0.3
 
-* `documentation` Verbesserung der Dokumentation der Interaktionen auf der Communication-Ressource nach Anpassung des Suchparameters `subject`  https://github.com/gematik/spec-ISiK-Terminplanung/pull/273
+* `documentation` Verbesserung der Dokumentation der Interaktionen auf der Communication-Ressource nach Anpassung der Suchparameter `subject` und `patient`  https://github.com/gematik/spec-ISiK-Terminplanung/pull/273
 
 ---
 
